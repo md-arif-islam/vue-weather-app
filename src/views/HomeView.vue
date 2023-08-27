@@ -30,6 +30,9 @@
         </template>
       </ul>
     </div>
+    <div class="flex flex-col gap-4">
+      <CityList />
+    </div>
   </main>
 </template>
 
@@ -37,16 +40,9 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
-
-const mapboxAPIKey =
-  "pk.eyJ1Ijoiam9obmtvbWFybmlja2kiLCJhIjoiY2t5NjFzODZvMHJkaDJ1bWx6OGVieGxreSJ9.IpojdT3U3NENknF6_WhR2Q";
-const searchQuery = ref("");
-const queryTimeout = ref(null);
-const mapboxSearchResults = ref(null);
-const searchError = ref(null);
+import CityList from "../components/CityList.vue";
 
 const router = useRouter();
-
 const previewCity = (searchResult) => {
   const [city, state] = searchResult.place_name.split(",");
   router.push({
@@ -59,6 +55,13 @@ const previewCity = (searchResult) => {
     },
   });
 };
+
+const mapboxAPIKey =
+  "pk.eyJ1Ijoiam9obmtvbWFybmlja2kiLCJhIjoiY2t5NjFzODZvMHJkaDJ1bWx6OGVieGxreSJ9.IpojdT3U3NENknF6_WhR2Q";
+const searchQuery = ref("");
+const queryTimeout = ref(null);
+const mapboxSearchResults = ref(null);
+const searchError = ref(null);
 
 const getSearchResults = () => {
   clearTimeout(queryTimeout.value);
