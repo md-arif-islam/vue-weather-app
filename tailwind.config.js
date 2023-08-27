@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "weather-primary": "#00668A",
+        "weather-secondary": "#004E71",
+      },
+    },
+    fontFamily: {
+      Poppins: ["Poppins", sans - serif],
+    },
   },
   plugins: [],
 };
