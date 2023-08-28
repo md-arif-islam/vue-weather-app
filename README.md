@@ -1,29 +1,54 @@
-# vue-weather-app
+# Weather Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple and intuitive web application to track the weather of your saved cities. Built with Vue.js and powered by the OpenWeatherMap API.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- **Save Cities**: Easily save your favorite cities and view their current weather.
+- **Responsive Design**: Adapts to any device, desktop or mobile.
+- **Instant Weather Updates**: Fetches the latest weather data in real-time.
 
-## Customize configuration
+## Live Demo
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[Click here](https://vue-weather-app-beta.vercel.app/) to see the live demo of the project.
 
-## Project Setup
+## Getting Started
 
-```sh
-npm install
-```
+### Prerequisites
 
-### Compile and Hot-Reload for Development
+- Node.js
+- npm or yarn
 
-```sh
-npm run dev
-```
+### Installation
 
-### Compile and Minify for Production
+1. Clone the repository:
+   \```
+   git clone https://github.com/md-arif-islam/vue-weather-app.git
+   \```
 
-```sh
-npm run build
-```
+2. Navigate to the project directory:
+   \```
+   cd vue-weather-app
+   \```
+
+3. Install the dependencies:
+   \```
+   npm install
+   \```
+
+4. Start the development server:
+   \```
+   npm run serve
+   \```
+
+5. Open your browser and navigate to `http://localhost:8080`.
+
+## Built With
+
+- [Vue.js](https://vuejs.org/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- [Axios](https://github.com/axios/axios)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
