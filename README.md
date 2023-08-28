@@ -22,24 +22,28 @@ A simple and intuitive web application to track the weather of your saved cities
 ### Installation
 
 1. Clone the repository:
-   \```
-   git clone https://github.com/md-arif-islam/vue-weather-app.git
-   \```
+
+```
+git clone https://github.com/md-arif-islam/vue-weather-app.git
+```
 
 2. Navigate to the project directory:
-   \```
-   cd vue-weather-app
-   \```
+
+```
+cd vue-weather-app
+```
 
 3. Install the dependencies:
-   \```
-   npm install
-   \```
+
+```
+npm install
+```
 
 4. Start the development server:
-   \```
-   npm run serve
-   \```
+
+```
+npm run serve
+```
 
 5. Open your browser and navigate to `http://localhost:8080`.
 
